@@ -6,7 +6,8 @@
   "main": "server.js",
   "scripts": {
     "dev": "nodemon",
-    "start:prod": "node src/server.js"
+    "start  ": "ts-node dist/app.js",
+    "build": "tsc -p ."
   },
   "dependencies": {
     "@discordjs/opus": "^0.3.3",
