@@ -3,7 +3,8 @@ on: [push]
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: Build prod
+    environment: Prod
     steps:
       - uses: kciter/aws-ecr-action@master
         with:
